@@ -862,6 +862,47 @@ code {
 
 
 /* =====================================================
+   4. LOGIN + REGISTER PAGE MOBILE CENTER FIX
+   Prevent forms touching right side
+   ===================================================== */
+
+
+@media (max-width:768px) {
+
+
+.auth-page,
+.auth-container,
+.auth-wrapper {
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+
+.auth-card,
+.login-card,
+.register-card,
+.auth-form {
+  width:calc(100% - 32px);
+  max-width:420px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+
+.auth-card input,
+.login-card input,
+.register-card input {
+  width:100%;
+}
+
+
+
+}
+
+
+/* =====================================================
    5. KEEP MOBILE NAVBAR FOR ADMIN + EDITOR USERS
    Remove old hiding behaviour
    ===================================================== */
@@ -929,5 +970,25 @@ body {
  calc(56px + env(safe-area-inset-bottom,0px));
 
 }
+
+}
+
+
+/* =====================================================
+   8. AUTH PAGE HEADER / FOOTER STABILITY
+   ===================================================== */
+
+
+@media(max-width:768px){
+
+.auth-page,
+.login-page,
+.register-page {
+
+ overflow-x:hidden;
+ width:100%;
+
+}
+
 
 }
