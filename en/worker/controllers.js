@@ -453,6 +453,11 @@ function buildCasinoCards(casinoList, geoData = null) {
       <div class="casino-card__compliance">
         ${casino.license ? `<div class="compliance-row"><span class="compliance-label">License:</span> <span class="compliance-value">${casino.license}</span></div>` : ""}
         ${casino.owner ? `<div class="compliance-row"><span class="compliance-label">Operator:</span> <span class="compliance-value">${casino.owner}</span></div>` : ""}
+        <div class="compliance-row">
+      <span class="compliance-text">
+        18+ | Play Responsibly | T&amp;Cs Apply
+      </span>
+    </div>
         ${casino.website_url ? `<div class="compliance-row"><span class="compliance-label">18+ | PLAY RESPONSIBLY | T&Cs APPLY{</div>` : ""}
       </div>`;
 
